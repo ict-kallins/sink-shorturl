@@ -23,7 +23,7 @@ const { title, github } = useAppConfig()
               class="flex items-center justify-center w-8 h-8 rounded-full"
             >
               <img
-                src="/sink.png"
+                src="https://kallainstitute.ac.id/wp-content/uploads/2025/01/convert-logokampus.png"
                 :alt="title"
                 class="w-full h-full rounded-full"
               >
