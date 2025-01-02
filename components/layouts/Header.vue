@@ -49,7 +49,7 @@ const { title, github } = useAppConfig()
                 class="flex items-center justify-center w-8 h-8 text-white bg-gray-900 rounded-full"
               >
                 <img
-                  src="/sink.png"
+                  src="https://kallainstitute.ac.id/wp-content/uploads/2025/01/convert-logokampus.png"
                   :alt="title"
                   class="w-full h-full rounded-full"
                 >
@@ -65,7 +65,7 @@ const { title, github } = useAppConfig()
                 href="/dashboard"
                 :title="`${title} Dashboard`"
               >Dashboard</a>
-              <a
+              <!-- <a
                 :href="github"
                 target="_blank"
                 title="Github"
@@ -74,7 +74,7 @@ const { title, github } = useAppConfig()
                 <GitHubIcon
                   class="w-5 h-5 mr-1"
                 />
-                GitHub</a>
+                GitHub</a> -->
               <span class="ml-1">
                 <SwitchTheme />
               </span>
