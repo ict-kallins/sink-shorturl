@@ -15,15 +15,19 @@ const emit = defineEmits(['update:link'])
 
 const editPopoverOpen = ref(false)
 
-const { host, origin } = location
+// const { host, origin } = location
 
+const url = useRequestURL()
+const host = url.host
+const origin = url.origin
+  
 function getLinkHost(url) {
   const { host } = parseURL(url)
   return host
 }
 
 const shortLink = computed(() => `${origin}/${props.link.slug}`)
-const linkIcon = computed(() => `https://kalla.id/icon.png`)
+const linkIcon = computed(() => `https://unavatar.io/${getLinkHost(props.link.url)}?fallback=https://kalla.id/icon.png`)
 
 const { copy, copied } = useClipboard({ source: shortLink.value, copiedDuring: 400 })
 
