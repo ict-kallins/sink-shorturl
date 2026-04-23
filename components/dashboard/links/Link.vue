@@ -27,7 +27,7 @@ function getLinkHost(url) {
 }
 
 const shortLink = computed(() => `${origin}/${props.link.slug}`)
-const linkIcon = computed(() => `https://kalla.id/icon.png`)
+const linkIcon = computed(() => '/icon.png')
 
 const { copy, copied } = useClipboard({ source: shortLink.value, copiedDuring: 400 })
 
